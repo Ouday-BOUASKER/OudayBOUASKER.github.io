@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	height: 100vh;
+	width: 100vw;
+	/*These 3 params for centering an object*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/**/
+	font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+	background-color: white;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.grey {
+	color: #999999; /*grey color*/
+}
+
+.profile-top {
+	height: 250px;
+	width: 500px;
+	background-image: url("./ENIT-img.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative; /*Pour permettre de placer l'image après*/
+}
+.profile-image {
+	background-image: url("./Ouday.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	/*Lorsqu'on fait un cercle, on n'a pas envie de voir tout ce qui le dépasse*/
+	overflow: hidden; 
+	border-radius: 50%;
+	/**/
+	border: 3px solid white;
+	position: absolute;
+	bottom: -10%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.profile-bottom {
+	margin-top: 75px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.main-infos {
+	display: flex;
+	align-items: center;
+	font-size: 28px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+.name {
+	font-weight: 700;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.status {
+	margin-top: 15px;
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.email {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.ville {
+	font-size: 20px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ville ion-icon {
+	margin-right: 5px;
+	color: #388eff; /*blue color*/
+}
+
+.profile-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+
+.stat-item:not(:last-child) {
+	border-right: 1px solid black;
+}
+
+.stat {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.link-certif{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-certif ion-icon {
+	margin-right: 5px;
+	margin-bottom: -3px;
+	color: #388eff; /*blue color*/
+}
+
